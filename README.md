@@ -11,15 +11,17 @@ Instead of manual mathematical feature extraction, this system converts raw EEG 
 To run this project, you need Python 3.8+ and the following libraries.
 
 
-📂 Project Structure
-/Seizure_Project
-    ├── raw_data                            # (Folder) storing downloaded Raw EEG file from CHB MIT DATASET
-    ├── Step1_Generate_Spectrograms.ipynb   # Code to create images
-    ├── Step2_Train_Test.ipynb               # Code to train the AI + Test it
-    └── dataset_spectrograms/               # (Created automatically by Step 1)
-          ├── healthy/             # Contains healthy spectrogram images
-          └── seizure/             # Contains seizure spectrogram images
+## 📂 Project Structure
 
+```text
+Seizure_Project/
+├── raw_data/                           # Stores downloaded Raw EEG files (CHB-MIT Dataset)
+├── dataset_spectrograms/               # (Generated automatically by Step 1)
+│   ├── healthy/                        # Contains healthy spectrogram images
+│   └── seizure/                        # Contains seizure spectrogram images
+├── Step1_Generate_Spectrograms.ipynb   # Code to create images from raw data
+└── Step2_Train_Test.ipynb              # Code to train the CNN and run the blind test
+```
 
 
 
