@@ -54,17 +54,3 @@ Seizure_Project/
  
       
 
-🔬 How It Works (The Logic)
-Spectrogram Conversion:
-We use STFT (Short-Time Fourier Transform) to convert 4-second EEG clips into images.
-X-Axis: Time (0-4s).
-Y-Axis: Frequency (0-70Hz).
-Color/Brightness: Signal Intensity (Loudness).
-
-CNN Architecture:
-Input Layer: Accepts 128x128 Grayscale images.
-Conv2D Layers: Scan the image for edges and seizure "stripes."
-MaxPooling Layers: Compress the image to highlight key features.
-Dense Layer: Makes the final decision.
-Output Layer: Sigmoid function (0 = Healthy, 1 = Seizure).
-
